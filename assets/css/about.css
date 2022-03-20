@@ -1,0 +1,40 @@
+@font-face {
+    font-family: brush;
+    src: url(../fonts/Aesthetic\ Violet.otf);
+}
+
+body{
+    background-image: url('../images/about_images/Background.png');
+    color: antiquewhite;
+    text-align: center;
+}
+h1 {
+    text-align: left;
+    font-size: 80px;
+    margin-left: 3vw;
+    font-family: brush;
+}
+
+.about_container > p{
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+
+img {
+    border-radius: 50%;
+    height: 12vw;
+}
+table {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+td {
+    padding: 1vw;
+}
+
+td > p{
+    width: 20vw;
+    text-align: justify;
+    text-justify: inter-word;
+}
