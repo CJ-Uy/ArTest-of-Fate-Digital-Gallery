@@ -5,6 +5,10 @@
 
 body {
     background-image: url('../images/about_images/Background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .header{
@@ -32,7 +36,7 @@ body {
 }
 
 #current_html {
-    color: grey;   
+    color: #e3ab5e;   
 }
 
 .nav_link {
