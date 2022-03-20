@@ -3,16 +3,21 @@ body{
     color: antiquewhite;
     text-align: center;
 }
+.content {
+    scroll-snap-type: y mandatory; /*IDK WHY ITS NOT WORKING HELP*/
+}
+.child {
+    scroll-snap-align: start;
+}
+
 h1 {
     text-align: center;
-    font-size: 80px;
-    margin-left: 3vw;
+    font-size: 5vw;
     font-family: brush;
 }
 
 .about_container > table {
-    margin-top: -5vw;
-    margin-left: 12vw;
+    margin-top: -3vw;
     text-decoration: none;
 }
 
@@ -29,15 +34,19 @@ h1 {
     
 } #info > p {
     margin-right: 2vw;
-    font-size: 1.5vw;
+    font-size: 1.55vw;
 }
 
 .ref_sheet {
-    height: 12vw;
+    height: 12.75vw;
 }
 
 #social_media_icons{
-    margin-top: 0vw;
+    margin-top: -2vw;
+}
+
+#judges_title {
+    margin-top: 9vw;
 }
 
 .judges_img {
@@ -59,4 +68,9 @@ table {
 .judge_table_cell{
     padding: 1vw;
     width: 20vw;
+}
+
+#credits {
+    margin-top: -4vw;
+    width: 50vw;
 }
