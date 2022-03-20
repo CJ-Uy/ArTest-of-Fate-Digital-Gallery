@@ -4,39 +4,59 @@ body{
     text-align: center;
 }
 h1 {
-    text-align: left;
+    text-align: center;
     font-size: 80px;
     margin-left: 3vw;
     font-family: brush;
 }
 
-.about_container > p{
-    text-align: justify;
-    text-justify: inter-word;
-    font-size: 20px;
-    margin-left: 15vw;
-    margin-right: 15vw;
-}
-
 .about_container > table {
+    margin-top: -5vw;
+    margin-left: 12vw;
     text-decoration: none;
 }
 
-img {
-    border-radius: 50%;
+.about_table_cell {
+    width: 20vw;
+    padding: 0.25vw;
+    text-align: center;
+} .about_table_cell > p{
+    text-align: justify;
+    text-justify: inter-word;
+}
+#info {
+    width: 40vw;
+    
+} #info > p {
+    margin-right: 2vw;
+    font-size: 1.5vw;
+}
+
+.ref_sheet {
     height: 12vw;
 }
+
+#social_media_icons{
+    margin-top: 0vw;
+}
+
+.judges_img {
+    border-radius: 50%;
+    height: 12vw;
+    padding: 1vw;
+}
+
 table {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
 }
-td {
-    padding: 1vw;
+
+#judges {
+    margin-top: -5vw;
 }
 
-td > p{
+.judge_table_cell{
+    padding: 1vw;
     width: 20vw;
-    text-align: justify;
-    text-justify: inter-word;
 }
