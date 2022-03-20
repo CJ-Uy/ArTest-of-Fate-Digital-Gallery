@@ -42,7 +42,17 @@ h1 {
 }
 
 #social_media_icons{
-    margin-top: -2vw;
+    margin-left: 25%;
+    transform: translateX(-25%);
+    margin-top: -5vw;
+}
+
+.media_icon {
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    height: 3vw;
+}.media_icon:hover {
+    background-color: gray;
 }
 
 #judges_title {
@@ -74,3 +84,4 @@ table {
     margin-top: -4vw;
     width: 50vw;
 }
+
