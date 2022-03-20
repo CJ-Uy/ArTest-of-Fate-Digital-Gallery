@@ -1,0 +1,53 @@
+@font-face {
+    font-family: brush;
+    src: url(../fonts/Aesthetic\ Violet.otf);
+}
+
+body {
+    background-image: url('../images/about_images/Background.png');
+}
+
+.header{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 7vw;
+    background: rgba(0,0,0,0.3);
+    color: antiquewhite;
+}
+
+#title {
+    z-index: 1;
+    position: absolute;
+    height: 7vw;
+    top: -1vw;
+    left: 50%; 
+    transform: translate(-50%,0);
+}
+
+.header p {
+    text-align: center;
+    z-index: 2;
+    margin-top: 5vw;
+}
+
+.header > p > a {    
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    color: antiquewhite;
+} .header > p > a:hover{
+    color: aqua;
+}
+
+#current_html {
+    color: grey;
+}
+
+.content{
+    margin-top: 8vw;
+}
