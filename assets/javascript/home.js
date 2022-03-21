@@ -1,8 +1,8 @@
 //Opening animation		
-var title = $("#title");
+var title = $("#opening_title");
 var botLeft = $("#botLeftOpening");
 var topRight = $("#topRightOpening");
-var content = $(".content");
+var content = $(".landing_page");
 
 window.setTimeout(function() {
     $("#cover").css("animation-name", "coverExit");

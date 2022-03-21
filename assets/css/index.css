@@ -52,14 +52,14 @@ body {
 }
 
 
-#title, #botLeftOpening, #topRightOpening {
+#opening_title, #botLeftOpening, #topRightOpening {
     position: absolute;
     width: 70vw;
 }
 
-#title {
+#opening_title {
     opacity: 0;
-    z-index: 1;
+    z-index: 0; /* maybe find a way to remove element after animation instead? */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -305,8 +305,8 @@ body {
     to { opacity: 0; display: none; }
 }
 
-/* tempest was here */
-.content{
+/* Charles was here */
+.landing_page{
     opacity: 0;
     animation-duration: 1s;
     animation-timing-function: linear;
