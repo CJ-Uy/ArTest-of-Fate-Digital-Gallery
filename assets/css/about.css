@@ -1,5 +1,4 @@
 body{
-    background-image: url('../images/about_images/Background.png');
     color: antiquewhite;
     text-align: center;
 }
@@ -76,6 +75,13 @@ table {
 .judge_table_cell{
     padding: 1vw;
     width: 20vw;
+    text-align: justify;
+}
+.name {
+    text-align: center;
+    font-size: 1.5vw;
+    color: #e3ab5e;
+    font-weight: bold;
 }
 
 #credits {
