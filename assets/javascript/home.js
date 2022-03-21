@@ -36,8 +36,6 @@ function resetInterval() {
 $(".card.left").on("click", moveRight);
 $(".card.right").on("click", moveLeft);
 
-
-
 var socials = [
     "Maxene Rhayne Paler",
     "Maxene Rhayne Paler",
