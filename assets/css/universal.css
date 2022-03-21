@@ -3,6 +3,10 @@
     src: url(../fonts/Aesthetic\ Violet.otf);
 }
 
+html, body{
+    margin: 0;
+}
+
 body {
     background-image: url('../images/about_images/Background.png');
     background-position: center;
@@ -16,7 +20,7 @@ h1{
 }
 
 .header{
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
@@ -56,5 +60,5 @@ h1{
 
 
 .content {
-    margin-top: 8vw;
+    margin-top: -3vw;
 }
