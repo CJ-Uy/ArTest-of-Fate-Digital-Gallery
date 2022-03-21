@@ -201,10 +201,17 @@
 			}
 			
 			.centerBack {
-				background-color: blue;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-image: url("2b.png");
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: center;
 				width: 100%;
 				height: 100%;
 				transform: rotateY(180deg);
+				text-align: center;
 			}
 
 						
@@ -319,6 +326,7 @@
 			<div class="centerInner">
 				<div class="centerFront"></div>
 				<div class="centerBack">
+					Maxene Rhayne Paler
 				</div>
 			</div>
 		</div>
@@ -354,6 +362,24 @@
 			*/
 			$(".card.left").on("click", moveRight);
 			$(".card.right").on("click", moveLeft);
+			
+			var socials = [
+				"Maxene Rhayne Paler",
+				"Maxene Rhayne Paler",
+				"Nikka Angela Naputo",
+				"Nikki Tabaranza",
+				"Phoemela Nardo Hyacinth Claire",
+				"Kyle Ravinn Nase",
+				"Leila Noelle Sabando",
+				"Lyka Lagera",
+				"Faye Rhianna Avendaño",
+				"Faye Rhianna Avendaño",
+				"Ynnah Abellana",
+				"Fiona Nadine Macalaglag",
+				"Frances Kate Sonon",
+				"Ivory dawn Castro",
+				"Sophia Vincess Cabalona"
+			]
 			
 			function moveLeft() {
 				//resetInterval();
@@ -395,9 +421,11 @@
 					}
 					
 					$(".card.center .centerInner .centerFront").css("background-image", "url('" + (centerCard + 1) + ".png')");
+					$(".card.center .centerInner .centerBack").css("background-image", "url('" + (centerCard + 1) + "b.png')");
 					$(".card.left").css("background-image", "url('" + (leftCard + 1) + ".png')");
 					$(".card.right").css("background-image", "url('" + (rightCard + 1) + ".png')");
 					$(".card.center").css("background-image", "");
+					$(".card.center .centerInner .centerBack").text(socials[centerCard]);
 					
 					
 					$(".card.left").on("click", moveRight);
@@ -448,16 +476,16 @@
 					}
 					
 					$(".card.center .centerInner .centerFront").css("background-image", "url('" + (centerCard - 1) + ".png')");
+					$(".card.center .centerInner .centerBack").css("background-image", "url('" + (centerCard - 1) + "b.png')");
 					$(".card.left").css("background-image", "url('" + (leftCard - 1) + ".png')");
 					$(".card.right").css("background-image", "url('" + (rightCard - 1) + ".png')");
 					$(".card.center").css("background-image", "");
+					$(".card.center .centerInner .centerBack").text(socials[centerCard - 2]);
 					
 					$(".card.left").on("click", moveRight);
 					$(".card.right").on("click", moveLeft);
 				}, 210);
 			}
-			
-			
 		</script>
 	</body>
 </html>
