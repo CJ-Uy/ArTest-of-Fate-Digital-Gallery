@@ -34,6 +34,7 @@ h1 {
 } #info > p {
     margin-right: 2vw;
     font-size: 1.55vw;
+    margin-top: -3vw;
 }
 
 .ref_sheet {
@@ -43,7 +44,7 @@ h1 {
 #social_media_icons{
     margin-left: 25%;
     transform: translateX(-25%);
-    margin-top: -5vw;
+    margin-top: -3vw;
 }
 
 .media_icon {
