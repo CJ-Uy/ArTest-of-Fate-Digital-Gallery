@@ -77,6 +77,7 @@ table {
     padding: 1vw;
     width: 20vw;
     text-align: justify;
+    font-size: 1vw;
 }
 .name {
     text-align: center;
@@ -88,5 +89,6 @@ table {
 #credits {
     margin-top: -4vw;
     width: 50vw;
+    font-size: 1.5vw;
 }
 

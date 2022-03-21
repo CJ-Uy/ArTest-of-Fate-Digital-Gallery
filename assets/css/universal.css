@@ -38,9 +38,15 @@ h1{
     transform: translate(-50%,0);
 }
 
-.header p {
+.header > p {
     text-align: center;
     margin-top: 0vw;
+}
+
+@media screen and (max-width: 800px){
+    .header > p {
+        margin-top: -2vw;
+    }
 }
 
 #current_html {
