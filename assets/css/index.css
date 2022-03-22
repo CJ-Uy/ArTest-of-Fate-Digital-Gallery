@@ -159,6 +159,7 @@ body {
     animation-fill-mode: forwards;
     perspective: 1000px;
     background-color: transparent;
+	cursor: pointer;
 }
 
 .centerInner {
@@ -316,4 +317,16 @@ body {
     color: #e3ab5e;
     font-size: 1.5vw;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.block {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: blue;
+	z-index: 1000;
+	border: 1px solid white;
+	opacity: 0;
+	display: none;
+	cursor: pointer;
 }

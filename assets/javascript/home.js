@@ -120,24 +120,23 @@ var socials = [
 ]
 
 function rotate() {
+	$(".card").off("click");
 	$(".centerInner").css("transform", "rotateY(180deg");
-	console.log("hi");
-	$(window).on("click", rotateBack);
+	$(".block").css("display", "block");
+	$(".block").on("click", rotateBack);
 }
 
 function rotateBack() {
-	window.onclick = function() {
-		$(".card").off("click");
-		$(".card.left").on("click", moveRight);
-		$(".card.right").on("click", moveLeft);
-		$(".card.center").on("click", rotate);
-		$(".centerInner").css("transform", "rotateY(0deg");
-	}
+	$(".card.left").on("click", moveRight);
+	$(".card.right").on("click", moveLeft);
+	$(".card.center").on("click", rotate);
+	$(".centerInner").css("transform", "rotateY(0deg");
+	$(".block").css("display", "none");
+	$(".block").off("click");
 }
 
 function moveLeft() {
     //resetInterval();
-	console.log("left");
 	$(".card").off("click")
     var centerCard = parseInt($(".card.center .centerInner .centerFront").css("background-image").match(/\d+/));
     var leftCard = parseInt($(".card.left").css("background-image").match(/\d+/));
@@ -192,7 +191,6 @@ function moveLeft() {
 
 function moveRight() {
     //resetInterval();
-	console.log("right	");
 	$(".card").off("click")
     var centerCard = parseInt($(".card.center .centerInner .centerFront").css("background-image").match(/\d+/));
     var leftCard = parseInt($(".card.left").css("background-image").match(/\d+/));
