@@ -242,6 +242,7 @@ function moveRight() {
         $(".card.center").css("background-image", "");
         $(".card.center .centerInner .centerBack").html(socials[centerCard - 2]);
         
+		
         $(".card.left").on("click", moveRight);
         $(".card.right").on("click", moveLeft);
 		$(".card.center").on("click", rotate);
