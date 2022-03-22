@@ -92,12 +92,15 @@ window.setTimeout(function() {
 
 
 //Cards moving
+/*
 var myInterval = setInterval(moveLeft, 5000);
 
 function resetInterval() {
     clearInterval(myInterval);
     myInterval = setInterval(moveLeft, 5000);
 }
+*/
+
 
 $(".card.left").on("click", moveRight);
 $(".card.right").on("click", moveLeft);
@@ -121,7 +124,7 @@ var socials = [
 ]
 
 function moveLeft() {
-    resetInterval();
+    //resetInterval();
     var centerCard = parseInt($(".card.center .centerInner .centerFront").css("background-image").match(/\d+/));
     var leftCard = parseInt($(".card.left").css("background-image").match(/\d+/));
     var rightCard = parseInt($(".card.right").css("background-image").match(/\d+/));
@@ -173,7 +176,7 @@ function moveLeft() {
 }
 
 function moveRight() {
-    resetInterval();
+    //resetInterval();
     var centerCard = parseInt($(".card.center .centerInner .centerFront").css("background-image").match(/\d+/));
     var leftCard = parseInt($(".card.left").css("background-image").match(/\d+/));
     var rightCard = parseInt($(".card.right").css("background-image").match(/\d+/));
