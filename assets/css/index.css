@@ -13,7 +13,6 @@ body {
     background-position: center;
     background-size: cover;
     overflow: hidden;
-    border: 1px solid white;
 }
 
 #cover {
@@ -313,11 +312,10 @@ body {
     animation-fill-mode: forwards;
 }
 #card_display {
-    /* Not working need to figure this out */
     margin-left: auto;
     margin-right: auto;
+    margin-top: 50vw;
     bottom: 0vw;
     height: 70vw;
-    border: 2px solid red;
-    background-color: aliceblue;
+    background-image: url("../images/about_images/Background.png");
 }

@@ -13,6 +13,7 @@ h1 {
     text-align: center;
     font-size: 5vw;
     font-family: brush;
+    margin-bottom: 5vw;
 }
 
 .about_container > table {
@@ -89,6 +90,6 @@ table {
 #credits {
     margin-top: -4vw;
     width: 50vw;
-    font-size: 1.5vw;
+    font-size: 1vw;
 }
 

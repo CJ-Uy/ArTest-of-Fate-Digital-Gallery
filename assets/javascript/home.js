@@ -11,6 +11,7 @@ window.setTimeout(function() {
     title.css("animation-name", "titleEnter");
     botLeft.css("animation-name", "botLeftEnter");
     topRight.css("animation-name", "topRightEnter");
+    $("#cover").css("display", "none");
 }, 3500);
 window.setTimeout(function() {
     title.css("animation-name", "titleExit");
@@ -19,6 +20,7 @@ window.setTimeout(function() {
 }, 6500);
 
 window.setTimeout(function() {
+    title.css("display", "none");
     content.css("animation-name", "titleEnter");
 }, 7500);
 
@@ -39,18 +41,18 @@ $(".card.right").on("click", moveLeft);
 var socials = [
     "Maxene Rhayne Paler",
     "Maxene Rhayne Paler",
-    "Nikka Angela Naputo",
-    "Nikki Tabaranza",
+    "Nikka Angela Naputo\nYoutube: N Loreiv\nInstagram: @nikedzky",
+    "Nikki Tabaranza\nInstagram: @syrr.upp_",
     "Phoemela Nardo Hyacinth Claire",
-    "Kyle Ravinn Nase",
+    "Kyle Ravinn Nase\nTwitter: @goobaiartz\nInstagram: @goobaiartz",
     "Leila Noelle Sabando",
     "Lyka Lagera",
-    "Faye Rhianna Avendaño",
-    "Faye Rhianna Avendaño",
+    "Faye Rhianna Avendaño\nInstagram: @fayerhiii",
+    "Faye Rhianna Avendaño\nInstagram: @fayerhiii",
     "Ynnah Abellana",
-    "Fiona Nadine Macalaglag",
-    "Frances Kate Sonon",
-    "Ivory dawn Castro",
+    "Fiona Nadine Macalaglag\nInstagram: @dein.nadine",
+    "Frances Kate Sonon\nInstagram: @kream.png",
+    "Ivory dawn Castro\nTwitter: @ivorydawn_",
     "Sophia Vincess Cabalona"
 ]
 
