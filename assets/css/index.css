@@ -330,3 +330,13 @@ body {
 	display: none;
 	cursor: pointer;
 }
+
+#description > p {
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translateX(-50%);
+    color: #e3ab5e;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5vw;
+}
