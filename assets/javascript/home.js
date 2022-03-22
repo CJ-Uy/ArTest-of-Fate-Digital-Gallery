@@ -1,3 +1,53 @@
+var images = new Array()
+
+function preload() {
+    for (i = 0; i < preload.arguments.length; i++) {
+        images[i] = new Image()
+        images[i].src = preload.arguments[i]
+    }
+}
+
+preload(
+    "assets/images/home_images/1.png",
+    "assets/images/home_images/2.png",
+    "assets/images/home_images/3.png",
+    "assets/images/home_images/4.png",
+    "assets/images/home_images/5.png",
+    "assets/images/home_images/6.png",
+    "assets/images/home_images/7.png",
+    "assets/images/home_images/8.png",
+    "assets/images/home_images/9.png",
+    "assets/images/home_images/10.png",
+    "assets/images/home_images/11.png",
+    "assets/images/home_images/12.png",
+    "assets/images/home_images/13.png",
+    "assets/images/home_images/14.png",
+    "assets/images/home_images/15.png",
+    "assets/images/home_images/1b.png",
+    "assets/images/home_images/2b.png",
+    "assets/images/home_images/3b.png",
+    "assets/images/home_images/4b.png",
+    "assets/images/home_images/5b.png",
+    "assets/images/home_images/6b.png",
+    "assets/images/home_images/7b.png",
+    "assets/images/home_images/8b.png",
+    "assets/images/home_images/9b.png",
+    "assets/images/home_images/10b.png",
+    "assets/images/home_images/11b.png",
+    "assets/images/home_images/12b.png",
+    "assets/images/home_images/13b.png",
+    "assets/images/home_images/14b.png",
+    "assets/images/home_images/15b.png"
+)
+
+moveRight();
+moveRight();
+moveRight();
+moveRight();
+moveRight();
+moveRight();
+moveRight();
+
 //Opening animation		
 var title = $("#opening_title");
 var botLeft = $("#botLeftOpening");
@@ -46,14 +96,12 @@ window.setTimeout(function() {
 
 
 //Cards moving
-/* 
-var myInterval = setInterval(moveLeft, 8000);
+var myInterval = setInterval(moveLeft, 3000);
 
 function resetInterval() {
     clearInterval(myInterval);
-    myInterval = setInterval(moveLeft, 8000);
+    myInterval = setInterval(moveLeft, 3000);
 }
-*/
 
 $(".card.left").on("click", moveRight);
 $(".card.right").on("click", moveLeft);
@@ -77,7 +125,7 @@ var socials = [
 ]
 
 function moveLeft() {
-    //resetInterval();
+    resetInterval();
     var centerCard = parseInt($(".card.center .centerInner .centerFront").css("background-image").match(/\d+/));
     var leftCard = parseInt($(".card.left").css("background-image").match(/\d+/));
     var rightCard = parseInt($(".card.right").css("background-image").match(/\d+/));
@@ -129,7 +177,7 @@ function moveLeft() {
 }
 
 function moveRight() {
-    //resetInterval();
+    resetInterval();
     var centerCard = parseInt($(".card.center .centerInner .centerFront").css("background-image").match(/\d+/));
     var leftCard = parseInt($(".card.left").css("background-image").match(/\d+/));
     var rightCard = parseInt($(".card.right").css("background-image").match(/\d+/));
