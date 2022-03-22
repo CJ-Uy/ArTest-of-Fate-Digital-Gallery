@@ -41,12 +41,8 @@ preload(
 )
 
 moveRight();
-moveRight();
-moveRight();
-moveRight();
-moveRight();
-moveRight();
-moveRight();
+
+
 
 //Opening animation		
 var title = $("#opening_title");
@@ -96,11 +92,11 @@ window.setTimeout(function() {
 
 
 //Cards moving
-var myInterval = setInterval(moveLeft, 3000);
+var myInterval = setInterval(moveLeft, 5000);
 
 function resetInterval() {
     clearInterval(myInterval);
-    myInterval = setInterval(moveLeft, 3000);
+    myInterval = setInterval(moveLeft, 5000);
 }
 
 $(".card.left").on("click", moveRight);
@@ -111,7 +107,7 @@ var socials = [
     "Maxene Rhayne Paler",
     "Nikka Angela Naputo<br>Youtube: N Loreiv<br>Instagram: @nikedzky",
     "Nikki Tabaranza<br>Instagram: @syrr.upp_",
-    "Phoemela Nardo Hyacinth Claire",
+    "Phoemela Nardo<br>Hyacinth Claire",
     "Kyle Ravinn Nase<br>Twitter: @goobaiartz<br>Instagram: @goobaiartz",
     "Leila Noelle Sabando",
     "Lyka Lagera",

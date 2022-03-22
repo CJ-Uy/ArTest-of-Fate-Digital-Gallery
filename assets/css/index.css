@@ -312,3 +312,8 @@ body {
     animation-timing-function: linear;
     animation-fill-mode: forwards;
 }
+.centerBack{
+    color: #e3ab5e;
+    font-size: 1.5vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
