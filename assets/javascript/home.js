@@ -163,7 +163,7 @@ function moveLeft() {
         }
         
         $(".card.center .centerInner .centerFront").css("background-image", "url('assets/images/home_images/" + (centerCard + 1) + ".png')");
-        $(".card.center .centerInner .centerBack").css("background-image", "url('assets/images/home_images/" + (centerCard + 1) + "b.png')");
+        $(".card.center .centerInner .centerBack").css("background-image", "url('assets/images/home_images/" + (centerCard + 1) + "b.PNG')");
         $(".card.left").css("background-image", "url('assets/images/home_images/" + (leftCard + 1) + ".png')");
         $(".card.right").css("background-image", "url('assets/images/home_images/" + (rightCard + 1) + ".png')");
         $(".card.center").css("background-image", "");
@@ -218,7 +218,7 @@ function moveRight() {
         }
         
         $(".card.center .centerInner .centerFront").css("background-image", "url('assets/images/home_images/" + (centerCard - 1) + ".png')");
-        $(".card.center .centerInner .centerBack").css("background-image", "url('assets/images/home_images/" + (centerCard - 1) + "b.png')");
+        $(".card.center .centerInner .centerBack").css("background-image", "url('assets/images/home_images/" + (centerCard - 1) + "b.PNG')");
         $(".card.left").css("background-image", "url('assets/images/home_images/" + (leftCard - 1) + ".png')");
         $(".card.right").css("background-image", "url('assets/images/home_images/" + (rightCard - 1) + ".png')");
         $(".card.center").css("background-image", "");
