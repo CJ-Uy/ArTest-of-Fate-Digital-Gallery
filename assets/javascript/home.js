@@ -104,6 +104,7 @@ function resetInterval() {
 
 $(".card.left").on("click", moveRight);
 $(".card.right").on("click", moveLeft);
+$(".card.center").off("click");
 
 var socials = [
     "Maxene Rhayne Paler",
@@ -172,6 +173,7 @@ function moveLeft() {
         
         $(".card.left").on("click", moveRight);
         $(".card.right").on("click", moveLeft);
+		$(".card.center").off("click");
     }, 210);
 }
 
@@ -226,5 +228,6 @@ function moveRight() {
         
         $(".card.left").on("click", moveRight);
         $(".card.right").on("click", moveLeft);
+		$(".card.center").off("click");
     }, 210);
 }

@@ -170,7 +170,7 @@ body {
     transform-style: preserve-3d;
 }
 
-.center:hover .centerInner {
+.center:active .centerInner {
     transform: rotateY(180deg);
 }
 
