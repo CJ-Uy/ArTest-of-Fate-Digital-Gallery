@@ -40,10 +40,6 @@ preload(
     "assets/images/home_images/15b.PNG"
 )
 
-moveRight();
-
-
-
 //Opening animation		
 var title = $("#opening_title");
 var botLeft = $("#botLeftOpening");
@@ -101,10 +97,9 @@ function resetInterval() {
 }
 */
 
-
 $(".card.left").on("click", moveRight);
 $(".card.right").on("click", moveLeft);
-$(".card.center").off("click");
+$(".card.center").on("click", rotate);
 
 var socials = [
     "Maxene Rhayne Paler",
@@ -124,8 +119,26 @@ var socials = [
     "Sophia Vincess Cabalona"
 ]
 
+function rotate() {
+	$(".centerInner").css("transform", "rotateY(180deg");
+	console.log("hi");
+	$(window).on("click", rotateBack);
+}
+
+function rotateBack() {
+	window.onclick = function() {
+		$(".card").off("click");
+		$(".card.left").on("click", moveRight);
+		$(".card.right").on("click", moveLeft);
+		$(".card.center").on("click", rotate);
+		$(".centerInner").css("transform", "rotateY(0deg");
+	}
+}
+
 function moveLeft() {
     //resetInterval();
+	console.log("left");
+	$(".card").off("click")
     var centerCard = parseInt($(".card.center .centerInner .centerFront").css("background-image").match(/\d+/));
     var leftCard = parseInt($(".card.left").css("background-image").match(/\d+/));
     var rightCard = parseInt($(".card.right").css("background-image").match(/\d+/));
@@ -133,7 +146,7 @@ function moveLeft() {
     $(".card.center").css("animation-name", "moveLeftCenter");
     $(".card.left").css("animation-name", "moveLeftLeft");
     $(".card.right").css("animation-name", "moveLeftRight");
-    
+	
     window.setTimeout(function() {
         $(".card.right .centerInner").remove();
         $(".card.center .centerInner").remove();
@@ -173,12 +186,14 @@ function moveLeft() {
         
         $(".card.left").on("click", moveRight);
         $(".card.right").on("click", moveLeft);
-		$(".card.center").off("click");
+		$(".card.center").on("click", rotate);
     }, 210);
 }
 
 function moveRight() {
     //resetInterval();
+	console.log("right	");
+	$(".card").off("click")
     var centerCard = parseInt($(".card.center .centerInner .centerFront").css("background-image").match(/\d+/));
     var leftCard = parseInt($(".card.left").css("background-image").match(/\d+/));
     var rightCard = parseInt($(".card.right").css("background-image").match(/\d+/));
@@ -186,6 +201,7 @@ function moveRight() {
     $(".card.center").css("animation-name", "moveRightCenter");
     $(".card.left").css("animation-name", "moveRightLeft");
     $(".card.right").css("animation-name", "moveRightRight");
+    $(".card").off("click");
     
     window.setTimeout(function() {
         $(".card.right .centerInner").remove();
@@ -228,6 +244,6 @@ function moveRight() {
         
         $(".card.left").on("click", moveRight);
         $(".card.right").on("click", moveLeft);
-		$(".card.center").off("click");
+		$(".card.center").on("click", rotate);
     }, 210);
 }

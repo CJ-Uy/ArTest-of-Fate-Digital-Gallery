@@ -169,11 +169,11 @@ body {
     transition: transform 0.8s;
     transform-style: preserve-3d;
 }
-
+/*
 .center:active .centerInner {
     transform: rotateY(180deg);
 }
-
+*/
 .centerFront, .centerBack {
     position: absolute;
     width: 100%;
