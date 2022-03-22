@@ -174,10 +174,6 @@ body {
     transform: rotateY(180deg);
 }
 
-.center:hover .centerInner {
-    transform: rotateY(180deg);
-}
-
 .centerFront, .centerBack {
     position: absolute;
     width: 100%;
