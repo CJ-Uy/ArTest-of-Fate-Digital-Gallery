@@ -17,10 +17,12 @@ h1 {
 }
 
 #link_container{
+    /*
     border: 0.2vw solid black;
     border-radius: 10%;
     background-color: black;
     background: rgba(0,0,0,0.3);
+    */
     height: 10vw;
     margin-top: 3vw;
     margin-left: 10vw;
@@ -36,8 +38,7 @@ h1 {
 } #link_container > a:hover {
     color: white;
     text-decoration: underline;
-}
-
+} 
 #social_media_icons{
     margin-top: 3vw;
     margin-left: 50%;
