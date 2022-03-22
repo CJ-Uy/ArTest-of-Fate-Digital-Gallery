@@ -4,6 +4,7 @@ var botLeft = $("#botLeftOpening");
 var topRight = $("#topRightOpening");
 var content = $(".landing_page");
 
+/* Opening animation w/ loading screen
 window.setTimeout(function() {
     $("#cover").css("animation-name", "coverExit");
 }, 3000);
@@ -23,6 +24,25 @@ window.setTimeout(function() {
     title.css("display", "none");
     content.css("animation-name", "titleEnter");
 }, 7500);
+*/
+
+/*No loading screen*/
+window.setTimeout(function() {
+    title.css("animation-name", "titleEnter");
+    botLeft.css("animation-name", "botLeftEnter");
+    topRight.css("animation-name", "topRightEnter");
+    $("#cover").css("display", "none");
+}, 500);
+window.setTimeout(function() {
+    title.css("animation-name", "titleExit");
+    botLeft.css("animation-name", "botLeftExit");
+    topRight.css("animation-name", "topRightExit");
+}, 3000);
+
+window.setTimeout(function() {
+    title.css("display", "none");
+    content.css("animation-name", "titleEnter");
+}, 4000);
 
 
 //Cards moving
