@@ -145,6 +145,7 @@ body {
     display: inline-block;
     height: 60%;
     width: 20%;
+	margin-top: 2%;
 }
 
 .center {
@@ -310,11 +311,4 @@ body {
     animation-duration: 1s;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
-}
-#card_display {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50vw;
-    bottom: 0vw;
-    background-image: url("../images/about_images/Background.png");
 }

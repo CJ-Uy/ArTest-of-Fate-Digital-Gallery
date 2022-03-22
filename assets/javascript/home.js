@@ -103,7 +103,7 @@ function moveLeft() {
             center.removeClass("right");
             $(".card.center").append("<div class='centerInner'><div class='centerFront'></div><div class='centerBack'></div></div>");
         
-        $("body").append(right);
+        $("#card_display").append(right);
         
         if(rightCard == 15) {
             rightCard = 0;
@@ -115,10 +115,10 @@ function moveLeft() {
             leftCard = 0;
         }
         
-        $(".card.center .centerInner .centerFront").css("background-image", "url('../images/home_images/" + (centerCard + 1) + ".png')");
-        $(".card.center .centerInner .centerBack").css("background-image", "url('../images/home_images/" + (centerCard + 1) + "b.png')");
-        $(".card.left").css("background-image", "url('../images/home_images/" + (leftCard + 1) + ".png')");
-        $(".card.right").css("background-image", "url('../images/home_images/" + (rightCard + 1) + ".png')");
+        $(".card.center .centerInner .centerFront").css("background-image", "url('assets/images/home_images/" + (centerCard + 1) + ".png')");
+        $(".card.center .centerInner .centerBack").css("background-image", "url('assets/images/home_images/" + (centerCard + 1) + "b.png')");
+        $(".card.left").css("background-image", "url('assets/images/home_images/" + (leftCard + 1) + ".png')");
+        $(".card.right").css("background-image", "url('assets/images/home_images/" + (rightCard + 1) + ".png')");
         $(".card.center").css("background-image", "");
         $(".card.center .centerInner .centerBack").text(socials[centerCard]);
         
@@ -155,7 +155,7 @@ function moveRight() {
             center.removeClass("left");
             $(".card.center").append("<div class='centerInner'><div class='centerFront'></div><div class='centerBack'></div></div>");
             
-        $("body").append(left);
+        $("#card_display").append(left);
         
         if(leftCard == 1) {
             leftCard = 16;
@@ -170,10 +170,10 @@ function moveRight() {
             rightCard = 16;
         }
         
-        $(".card.center .centerInner .centerFront").css("background-image", "url('../images/home_images/" + (centerCard - 1) + ".png')");
-        $(".card.center .centerInner .centerBack").css("background-image", "url('../images/home_images/" + (centerCard - 1) + "b.png')");
-        $(".card.left").css("background-image", "url('../images/home_images/" + (leftCard - 1) + ".png')");
-        $(".card.right").css("background-image", "url('../images/home_images/" + (rightCard - 1) + ".png')");
+        $(".card.center .centerInner .centerFront").css("background-image", "url('assets/images/home_images/" + (centerCard - 1) + ".png')");
+        $(".card.center .centerInner .centerBack").css("background-image", "url('assets/images/home_images/" + (centerCard - 1) + "b.png')");
+        $(".card.left").css("background-image", "url('assets/images/home_images/" + (leftCard - 1) + ".png')");
+        $(".card.right").css("background-image", "url('assets/images/home_images/" + (rightCard - 1) + ".png')");
         $(".card.center").css("background-image", "");
         $(".card.center .centerInner .centerBack").text(socials[centerCard - 2]);
         
