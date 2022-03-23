@@ -115,7 +115,7 @@ var socials = [
     "Ynnah Abellana",
     "Fiona Nadine Macalaglag<br>Instagram: @dein.nadine",
     "Frances Kate Sonon<br>Instagram: @kream.png",
-    "Ivory dawn Castro<br>Twitter: @ivorydawn_",
+    "Ivory dawn Castro<br>Instagram: @ivorydawn_",
     "Sophia Vincess Cabalona"
 ]
 
